@@ -17,7 +17,7 @@ public class VBinarySearchTree {
         tree.add(10);
         tree.add(5);
         tree.add(15);
-        //tree.inOrder();
+        tree.inOrder();
         
         System.out.println(tree); //it has output, but its not what I expected
         System.out.print("231232131");
