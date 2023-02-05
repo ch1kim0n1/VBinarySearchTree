@@ -210,14 +210,13 @@ getNumLevelsRecursive(current.left, level + 1);
 getNumLevelsRecursive(current.right, level + 1);
 }
 public int getHeight() {
-height = 0;
-getHeightRecursive(root, 0);
-return height;
+int height = 0;
+return getHeightRecursive(root, 0);
 }
 
 private int getHeightRecursive(Node current, int currentHeight) {
 if (current == null) {
-return currentHeight;
+return currentHeight - 1;
 }
 int leftHeight = getHeightRecursive(current.left, currentHeight + 1);
 int rightHeight = getHeightRecursive(current.right, currentHeight + 1);
@@ -265,7 +264,7 @@ isFullRecursive(current.right);
 }
 
 public boolean isComplete() {
-isComplete = true;
+boolean isComplete = true;
 int height = getHeight();
 isCompleteRecursive(root, height, 0);
 return isComplete;
@@ -276,10 +275,13 @@ if (current == null) {
 return;
 }
 if (height != level + 1 && (current.left == null || current.right == null)) {
-  isComplete = false;
-  return;
+isComplete = false;
+return;
 }
-
+if (current.left == null || current.right == null) {
+isComplete = false;
+return;
+}
 isCompleteRecursive(current.left, height, level + 1);
 isCompleteRecursive(current.right, height, level + 1);
 }
