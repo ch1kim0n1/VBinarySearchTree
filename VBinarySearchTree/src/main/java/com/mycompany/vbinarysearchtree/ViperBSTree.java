@@ -8,67 +8,6 @@ package com.mycompany.vbinarysearchtree;
  *
  * @author skyla
  */
-//public class ViperBSTree {
-//    
-//    private VTreeNode root;
-//    
-//    
-//    public ViperBSTree(){
-//        root = null;
-//    }
-//    
-//    
-//    public void add(Integer val){
-//        root = add(val, root);
-//    }
-//    
-//    private VTreeNode add(Integer val, VTreeNode tree)
-//    {
-//
-//    if (tree == null)
-//
-//        return new VTreeNode(val, null, null);
-//
-//    int dirTest = val.compareTo(tree.getValue());
-//
-//    if(dirTest<0)
-//
-//        tree.setVNodeLeft(add(val, tree.getVNodeLeft()));
-//
-//    else if(dirTest>0)
-//
-//        tree.setVNodeRight(add(val, tree.getVNodeRight()));
-//
-//    return tree;
-//
-//    }
-//    
-//    public String inOrder(){
-//        
-//        return inOrder(root);
-//    }
-//    
-//    private String inOrder(VTreeNode tree)
-//    {
-//        String output = "";
-//        if (tree != null){
-//            output +=tree.getVNodeLeft() + " ";
-//            output += tree.getValue() + " ";
-//            output +=tree.getVNodeRight() + " ";
-//            
-//            return output;
-//        }
-//        return "12";
-//    }
-//
-//    @Override
-//    public String toString() {
-//        //return root + "";
-//        return inOrder() + ""; //something is wrong HEREEEEE!
-//    }
-//    
-//    
-//}
 
 class Node {
   int data;
@@ -179,120 +118,120 @@ public class ViperBSTree {
   
   public int getNumNodes() {
     numNodes = 0;
-getNumNodesRecursive(root);
-return numNodes;
-}
+    getNumNodesRecursive(root);
+    return numNodes;
+    }
 
-private void getNumNodesRecursive(Node current) {
-if (current == null) {
-return;
-}
-numNodes++;
-getNumNodesRecursive(current.left);
-getNumNodesRecursive(current.right);
-}
+    private void getNumNodesRecursive(Node current) {
+    if (current == null) {
+    return;
+    }
+    numNodes++;
+    getNumNodesRecursive(current.left);
+    getNumNodesRecursive(current.right);
+    }
 
-public int getNumLevels() {
-levels = 0;
-getNumLevelsRecursive(root, 1);
-return levels;
-}
+    public int getNumLevels() {
+    levels = 0;
+    getNumLevelsRecursive(root, 1);
+    return levels;
+    }
 
-private void getNumLevelsRecursive(Node current, int level) {
-if (current == null) {
-return;
-}
-if (level > levels) {
-  levels = level;
-}
+    private void getNumLevelsRecursive(Node current, int level) {
+    if (current == null) {
+    return;
+    }
+    if (level > levels) {
+      levels = level;
+    }
 
-getNumLevelsRecursive(current.left, level + 1);
-getNumLevelsRecursive(current.right, level + 1);
-}
-public int getHeight() {
-int height = 0;
-return getHeightRecursive(root, 0);
-}
+    getNumLevelsRecursive(current.left, level + 1);
+    getNumLevelsRecursive(current.right, level + 1);
+    }
+    public int getHeight() {
+    int height = 0;
+    return getHeightRecursive(root, 0);
+    }
 
-private int getHeightRecursive(Node current, int currentHeight) {
-if (current == null) {
-return currentHeight - 1;
-}
-int leftHeight = getHeightRecursive(current.left, currentHeight + 1);
-int rightHeight = getHeightRecursive(current.right, currentHeight + 1);
+    private int getHeightRecursive(Node current, int currentHeight) {
+    if (current == null) {
+    return currentHeight - 1;
+    }
+    int leftHeight = getHeightRecursive(current.left, currentHeight + 1);
+    int rightHeight = getHeightRecursive(current.right, currentHeight + 1);
 
-return Math.max(leftHeight, rightHeight);
-}
+    return Math.max(leftHeight, rightHeight);
+    }
 
-public String toString() {
-StringBuilder sb = new StringBuilder();
-toStringRecursive(root, sb);
-return sb.toString().trim();
-}
+    public String toString() {
+    StringBuilder sb = new StringBuilder();
+    toStringRecursive(root, sb);
+    return sb.toString().trim();
+    }
 
-private void toStringRecursive(Node current, StringBuilder sb) {
-if (current == null) {
-return;
-}
-toStringRecursive(current.left, sb);
-sb.append(current.data + " ");
-toStringRecursive(current.right, sb);
-}
+    private void toStringRecursive(Node current, StringBuilder sb) {
+    if (current == null) {
+    return;
+    }
+    toStringRecursive(current.left, sb);
+    sb.append(current.data + " ");
+    toStringRecursive(current.right, sb);
+    }
 
-public boolean isFull() {
-isFull = true;
-isFullRecursive(root);
-return isFull;
-}
+    public boolean isFull() {
+    isFull = true;
+    isFullRecursive(root);
+    return isFull;
+    }
 
-private void isFullRecursive(Node current) {
-if (current == null) {
-return;
-}
-if (current.left == null && current.right != null) {
-  isFull = false;
-  return;
-}
+    private void isFullRecursive(Node current) {
+    if (current == null) {
+    return;
+    }
+    if (current.left == null && current.right != null) {
+      isFull = false;
+      return;
+    }
 
-if (current.left != null && current.right == null) {
-  isFull = false;
-  return;
-}
+    if (current.left != null && current.right == null) {
+      isFull = false;
+      return;
+    }
 
-isFullRecursive(current.left);
-isFullRecursive(current.right);
-}
+    isFullRecursive(current.left);
+    isFullRecursive(current.right);
+    }
 
-public boolean isComplete() {
-boolean isComplete = true;
-int height = getHeight();
-isCompleteRecursive(root, height, 0);
-return isComplete;
-}
+    public boolean isComplete() {
+    boolean isComplete = true;
+    int height = getHeight();
+    isCompleteRecursive(root, height, 0);
+    return isComplete;
+    }
 
-private void isCompleteRecursive(Node current, int height, int level) {
-if (current == null) {
-return;
-}
-if (height != level + 1 && (current.left == null || current.right == null)) {
-isComplete = false;
-return;
-}
-if (current.left == null || current.right == null) {
-isComplete = false;
-return;
-}
-isCompleteRecursive(current.left, height, level + 1);
-isCompleteRecursive(current.right, height, level + 1);
-}
+    private void isCompleteRecursive(Node current, int height, int level) {
+    if (current == null) {
+    return;
+    }
+    if (height != level + 1 && (current.left == null || current.right == null)) {
+    isComplete = false;
+    return;
+    }
+    if (current.left == null || current.right == null) {
+    isComplete = false;
+    return;
+    }
+    isCompleteRecursive(current.left, height, level + 1);
+    isCompleteRecursive(current.right, height, level + 1);
+    }
 
-private class Node {
-int data;
-Node left;
-Node right;
-public Node(int data) {
-  this.data = data;
-}
-}
+    private class Node {
+    int data;
+    Node left;
+    Node right;
+    public Node(int data) {
+      this.data = data;
+    }
+  }
 }
 
