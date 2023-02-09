@@ -10,7 +10,7 @@ public class MainWindow extends javax.swing.JFrame {
      */
     public MainWindow() {
         initComponents();
-        
+        MainWindow_Panel_Graph = new GraphicsPanelTree();
     }
 
     /**
@@ -93,8 +93,6 @@ public class MainWindow extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void MainWindow_TextFiels_AddNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainWindow_TextFiels_AddNumActionPerformed
-    //MainWindow_Panel_Graph = new GraphicsPanelTree();
-        
     String data = MainWindow_TextFiels_AddNum.getText();
 
     ((GraphicsPanelTree)MainWindow_Panel_Graph).processData(data);
@@ -102,8 +100,6 @@ public class MainWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_MainWindow_TextFiels_AddNumActionPerformed
 
     private void MainWindow_Button_ShowTableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainWindow_Button_ShowTableActionPerformed
-    //MainWindow_Panel_Graph = new GraphicsPanelTree();
-        
     String data = MainWindow_TextFiels_AddNum.getText();    
 
     ((GraphicsPanelTree)MainWindow_Panel_Graph).processData(data);

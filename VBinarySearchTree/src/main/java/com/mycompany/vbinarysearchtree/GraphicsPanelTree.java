@@ -15,7 +15,7 @@ import java.util.Random;
 public class GraphicsPanelTree extends JPanel {
     private int[] data;
 
-    void processData(String valuesString) {
+    public void processData(String valuesString) {
         String[] valuesArray = valuesString.split(" ");
         int[] values = new int[valuesArray.length];
         for (int i = 0; i < valuesArray.length; i++) {
@@ -23,20 +23,23 @@ public class GraphicsPanelTree extends JPanel {
         }
         this.data = values;
         repaint();
-}
+    }
 
 
     @Override
-    protected void paintComponent(Graphics g) {  //code dosent trigger it!!!!!!!!!!!!!!!!!!!!!!!!!!     
+    protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         int x = getWidth() / 2;
-        int y = getHeight() / 2;
-         System.out.println(x);         
-         
-        drawTree(g, x, y, data, 0, data.length - 1);
+        int y = 30;
+        
+        Graphics2D g2d = (Graphics2D) g;
+        g2d.setColor(Color.BLACK);
+        g2d.setStroke(new BasicStroke(2));
+        
+        drawTree(g2d, x, y, data, 0, data.length - 1);
     }
 
-    private void drawTree(Graphics g, int x, int y, int[] values, int start, int end) {
+    private void drawTree(Graphics2D g, int x, int y, int[] values, int start, int end) {
         if (start > end) return;
         int mid = (start + end) / 2;
         g.drawString(Integer.toString(values[mid]), x, y);
