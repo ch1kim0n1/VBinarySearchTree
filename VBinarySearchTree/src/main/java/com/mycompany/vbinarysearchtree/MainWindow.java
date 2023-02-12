@@ -10,7 +10,6 @@ public class MainWindow extends javax.swing.JFrame {
      */
     public MainWindow() {
         initComponents();
-        MainWindow_Panel_Graph = new GraphicsPanelTree();
     }
 
     /**
@@ -25,21 +24,21 @@ public class MainWindow extends javax.swing.JFrame {
         MainWindow_TextFiels_AddNum = new javax.swing.JTextField();
         MainWindow_Label_Warning = new javax.swing.JLabel();
         MainWindow_Button_ShowTable = new javax.swing.JButton();
-        MainWindow_Panel_Graph = new javax.swing.JPanel();
+        MainWindow_Panel_Graph = new GraphicsPanelTree();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        MainWindow_TextFiels_AddNum.setText("70 80 85 90 98 100 120");
+        MainWindow_TextFiels_AddNum.setText("90");
         MainWindow_TextFiels_AddNum.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MainWindow_TextFiels_AddNumActionPerformed(evt);
             }
         });
 
-        MainWindow_Label_Warning.setText("<- ALL Numbers Here");
+        MainWindow_Label_Warning.setText("<- One Per Time");
 
-        MainWindow_Button_ShowTable.setText("Show Table ");
+        MainWindow_Button_ShowTable.setText("ADD");
         MainWindow_Button_ShowTable.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MainWindow_Button_ShowTableActionPerformed(evt);
@@ -93,17 +92,15 @@ public class MainWindow extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void MainWindow_TextFiels_AddNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainWindow_TextFiels_AddNumActionPerformed
-    String data = MainWindow_TextFiels_AddNum.getText();
+    int data = Integer.parseInt(MainWindow_TextFiels_AddNum.getText());
 
     ((GraphicsPanelTree)MainWindow_Panel_Graph).processData(data);
-    System.out.println(data);
     }//GEN-LAST:event_MainWindow_TextFiels_AddNumActionPerformed
 
     private void MainWindow_Button_ShowTableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainWindow_Button_ShowTableActionPerformed
-    String data = MainWindow_TextFiels_AddNum.getText();    
+    int data = Integer.parseInt(MainWindow_TextFiels_AddNum.getText());  
 
     ((GraphicsPanelTree)MainWindow_Panel_Graph).processData(data);
-    System.out.println(data);
     }//GEN-LAST:event_MainWindow_Button_ShowTableActionPerformed
 
     /**
