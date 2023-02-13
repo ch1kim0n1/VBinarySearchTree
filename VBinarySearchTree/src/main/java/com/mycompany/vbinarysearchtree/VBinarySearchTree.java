@@ -12,7 +12,7 @@ package com.mycompany.vbinarysearchtree;
 public class VBinarySearchTree {
 
     public static void main(String[] args) {
-        ViperBSTree tree = new ViperBSTree();
+        ViperBST tree = new ViperBST();
         
         tree.add(90);
         tree.add(80);

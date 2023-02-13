@@ -10,42 +10,38 @@ package com.mycompany.vbinarysearchtree;
  */
 public class VTreeNode {
     
-    private int value;
-    private VTreeNode VNodeLeft;
-    private VTreeNode VNodeRight;
+    private int val;
+    private VTreeNode left;
+    private VTreeNode right;
 
-    public VTreeNode(int value, VTreeNode VNodeLeft, VTreeNode VNodeRight) {
-        this.value = value;
-        this.VNodeLeft = VNodeLeft;
-        this.VNodeRight = VNodeRight;
+    public VTreeNode(int val, VTreeNode left, VTreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 
-    
-    
-    public int getValue() {
-        return value;
+    public int getVal() {
+        return val;
     }
 
-    public void setValue(int value) {
-        this.value = value;
+    public void setVal(int val) {
+        this.val = val;
     }
 
-    public VTreeNode getVNodeLeft() {
-        return VNodeLeft;
+    public VTreeNode getLeft() {
+        return left;
     }
 
-    public void setVNodeLeft(VTreeNode VNodeLeft) {
-        this.VNodeLeft = VNodeLeft;
+    public void setLeft(VTreeNode left) {
+        this.left = left;
     }
 
-    public VTreeNode getVNodeRight() {
-        return VNodeRight;
+    public VTreeNode getRight() {
+        return right;
     }
 
-    public void setVNodeRight(VTreeNode VNodeRight) {
-        this.VNodeRight = VNodeRight;
+    public void setRight(VTreeNode right) {
+        this.right = right;
     }
-    
-    
     
 }
