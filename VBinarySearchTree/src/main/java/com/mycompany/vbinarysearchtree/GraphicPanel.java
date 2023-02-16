@@ -32,7 +32,7 @@ public class GraphicPanel extends JPanel{
             drawTree(tree.getRootNode(), nodeX, yNode, center/2, g);
     }
 
-    private void drawNode(int xNode, int yNode, int delta, String value, Graphics g) {
+    private void Nodes(Graphics g, int xNode, int yNode, int delta, String value) {
         int height = 40; 
         int levelHeight = height * 2;
         g.drawString(value, xNode + 5,yNode + 25);
@@ -51,7 +51,7 @@ public class GraphicPanel extends JPanel{
     
     private void drawTree(VTreeNode root, int xNode, int yNode, int delta, Graphics g){
         if (root != null){
-            drawNode(xNode, yNode, delta, root.getVal() + "", g);
+            Nodes(g, xNode, yNode, delta, root.getVal() + "");
             int childrenDelta = delta / 2;
             drawTree(root.getLeft(), xNode - delta, yNode + 80, childrenDelta, g);
             drawTree(root.getRight(), xNode + delta, yNode + 80, childrenDelta, g);

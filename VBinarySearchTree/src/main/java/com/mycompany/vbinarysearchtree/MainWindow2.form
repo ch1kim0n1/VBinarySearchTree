@@ -25,84 +25,84 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="TextField" min="-2" pref="88" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="add_button" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="MainWindow2_label_stats" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="MainWindow2_label_complete" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="MainWindow2_textField_isComplete" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="MainWindow2_label_nodes" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                      <Component id="MainWindow2_textField_Nodes" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="MainWindow2_label_leaves" min="-2" max="-2" attributes="0"/>
+                                          <Component id="MainWindow2_label_full" min="-2" max="-2" attributes="0"/>
+                                          <Component id="MainWindow2_label_height" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="MainWindow2_label_levels" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="MainWindow2_textField_levels" min="-2" max="-2" attributes="0"/>
+                                          <Component id="MainWindow2_textField_leaves" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="MainWindow2_textField_isFull" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="MainWindow2_textLabel_height" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Component id="MainWindow2_textFiled_string" min="-2" pref="190" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                              <Component id="MainWindow2_label_string" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                              <Component id="MainWindow2_textFiled_InOrder" min="-2" pref="189" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                              <Component id="MainWindow2_textFiled_preOrder" min="-2" pref="208" max="-2" attributes="0"/>
+                              <EmptySpace pref="51" max="32767" attributes="0"/>
+                              <Component id="MainWindow2_textField_PostOrder" min="-2" pref="180" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
+                              <Component id="MainWindow2_label_inOder" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="189" max="-2" attributes="0"/>
+                              <Component id="MainWindow2_label_preOrder" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="MainWindow2_label_PostOrder" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="MainWindow2_Frame_tree_panel" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="MainWindow2_TextField_Add" min="-2" pref="88" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="MainWindow2_button_add" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="levels" min="-2" max="-2" attributes="0"/>
-                          <Component id="leaves" min="-2" max="-2" attributes="0"/>
-                          <Component id="full" min="-2" max="-2" attributes="0"/>
-                          <Component id="complete" min="-2" max="-2" attributes="0"/>
-                          <Component id="height" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="nodes" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="levels_data" min="-2" max="-2" attributes="0"/>
-                          <Component id="leaves_data" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="isFull" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="isComplete" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="height_data" min="-2" max="-2" attributes="0"/>
-                          <Component id="nodes_data" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-              </Group>
-              <EmptySpace pref="29" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="tree_string" min="-2" pref="156" max="-2" attributes="0"/>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="tree_label_string" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="tree_inOrder" min="-2" pref="142" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="tree_label_inOrder" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="tree_preOrder" min="-2" pref="135" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="tree_label_preOrder" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="tree_postOrder" min="-2" pref="141" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="tree_label_postOrder" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-                  <Component id="tree_panel" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -111,67 +111,74 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="add_button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="MainWindow2_TextField_Add" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="MainWindow2_button_add" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="MainWindow2_label_stats" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="height" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="height_data" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MainWindow2_label_height" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MainWindow2_textLabel_height" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="levels_data" min="-2" max="-2" attributes="0"/>
-                          <Component id="levels" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="leaves" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="leaves_data" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MainWindow2_label_levels" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MainWindow2_textField_levels" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="nodes_data" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="nodes" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MainWindow2_label_leaves" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MainWindow2_textField_leaves" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="isFull" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="full" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MainWindow2_textField_Nodes" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MainWindow2_label_nodes" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="isComplete" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="complete" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MainWindow2_textField_isFull" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MainWindow2_label_full" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="MainWindow2_textField_isComplete" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="MainWindow2_label_complete" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="tree_panel" min="-2" max="-2" attributes="0"/>
+                      <Component id="MainWindow2_Frame_tree_panel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="tree_label_preOrder" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="tree_label_postOrder" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="tree_label_inOrder" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="tree_label_string" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="MainWindow2_label_string" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MainWindow2_label_inOder" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="MainWindow2_textFiled_string" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MainWindow2_textFiled_InOrder" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="tree_string" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="tree_inOrder" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="tree_preOrder" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="tree_postOrder" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MainWindow2_label_preOrder" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MainWindow2_label_PostOrder" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="MainWindow2_textFiled_preOrder" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MainWindow2_textField_PostOrder" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="30" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="18" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -179,7 +186,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="tree_panel">
+    <Container class="javax.swing.JPanel" name="MainWindow2_Frame_tree_panel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -202,7 +209,7 @@
         </DimensionLayout>
       </Layout>
     </Container>
-    <Component class="javax.swing.JTextField" name="TextField">
+    <Component class="javax.swing.JTextField" name="MainWindow2_TextField_Add">
       <Properties>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[100, 23]"/>
@@ -212,35 +219,35 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="add_button">
+    <Component class="javax.swing.JButton" name="MainWindow2_button_add">
       <Properties>
         <Property name="text" type="java.lang.String" value="ADD"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="add_buttonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MainWindow2_button_addActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="MainWindow2_label_stats">
       <Properties>
         <Property name="text" type="java.lang.String" value="STATS"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="levels">
+    <Component class="javax.swing.JLabel" name="MainWindow2_label_levels">
       <Properties>
         <Property name="text" type="java.lang.String" value="Levels"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="tree_label_string">
+    <Component class="javax.swing.JLabel" name="MainWindow2_label_string">
       <Properties>
         <Property name="text" type="java.lang.String" value="String"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="leaves">
+    <Component class="javax.swing.JLabel" name="MainWindow2_label_leaves">
       <Properties>
         <Property name="text" type="java.lang.String" value="Leaves"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="tree_string">
+    <Component class="javax.swing.JTextField" name="MainWindow2_textFiled_string">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -248,12 +255,12 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="nodes">
+    <Component class="javax.swing.JLabel" name="MainWindow2_label_nodes">
       <Properties>
         <Property name="text" type="java.lang.String" value="Nodes"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="tree_preOrder">
+    <Component class="javax.swing.JTextField" name="MainWindow2_textFiled_preOrder">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -261,22 +268,22 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="full">
+    <Component class="javax.swing.JLabel" name="MainWindow2_label_full">
       <Properties>
         <Property name="text" type="java.lang.String" value="Full?"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="tree_label_preOrder">
+    <Component class="javax.swing.JLabel" name="MainWindow2_label_preOrder">
       <Properties>
         <Property name="text" type="java.lang.String" value="Pre Order"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="complete">
+    <Component class="javax.swing.JLabel" name="MainWindow2_label_complete">
       <Properties>
         <Property name="text" type="java.lang.String" value="Complete?"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="tree_inOrder">
+    <Component class="javax.swing.JTextField" name="MainWindow2_textFiled_InOrder">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -284,7 +291,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="height_data">
+    <Component class="javax.swing.JTextField" name="MainWindow2_textLabel_height">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -293,12 +300,12 @@
         <Property name="text" type="java.lang.String" value="     "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="tree_label_postOrder">
+    <Component class="javax.swing.JLabel" name="MainWindow2_label_PostOrder">
       <Properties>
         <Property name="text" type="java.lang.String" value="Post Order"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="levels_data">
+    <Component class="javax.swing.JTextField" name="MainWindow2_textField_levels">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -307,7 +314,7 @@
         <Property name="text" type="java.lang.String" value="     "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="tree_postOrder">
+    <Component class="javax.swing.JTextField" name="MainWindow2_textField_PostOrder">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -315,7 +322,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="leaves_data">
+    <Component class="javax.swing.JTextField" name="MainWindow2_textField_leaves">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -324,12 +331,12 @@
         <Property name="text" type="java.lang.String" value="     "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="tree_label_inOrder">
+    <Component class="javax.swing.JLabel" name="MainWindow2_label_inOder">
       <Properties>
         <Property name="text" type="java.lang.String" value="In Order"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="nodes_data">
+    <Component class="javax.swing.JTextField" name="MainWindow2_textField_Nodes">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -338,7 +345,7 @@
         <Property name="text" type="java.lang.String" value="     "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="isFull">
+    <Component class="javax.swing.JTextField" name="MainWindow2_textField_isFull">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -347,12 +354,12 @@
         <Property name="text" type="java.lang.String" value="          "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="height">
+    <Component class="javax.swing.JLabel" name="MainWindow2_label_height">
       <Properties>
         <Property name="text" type="java.lang.String" value="Height"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="isComplete">
+    <Component class="javax.swing.JTextField" name="MainWindow2_textField_isComplete">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">

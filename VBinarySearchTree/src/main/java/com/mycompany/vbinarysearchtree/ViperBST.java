@@ -73,8 +73,8 @@ public class ViperBST {
         String output = "";
         
         output += tree.getVal() + " ";
-        output += inOrder(tree.getLeft());
-        output += inOrder(tree.getRight());
+        output += preOrder(tree.getLeft());
+        output += preOrder(tree.getRight());
             
         return output;
     }
@@ -87,8 +87,8 @@ public class ViperBST {
         
         String output = "";
         
-        output += inOrder(tree.getLeft());
-        output += inOrder(tree.getRight());
+        output += postOrder(tree.getLeft());
+        output += postOrder(tree.getRight());
         output += tree.getVal() + " ";
             
         return output;
@@ -170,23 +170,23 @@ public class ViperBST {
         
         boolean isNotComplete = false;
         
-        LinkedList<VTreeNode> X = new LinkedList<VTreeNode>();
+        LinkedList<VTreeNode> treeList = new LinkedList<VTreeNode>();
         
-        X.add(tree);
+        treeList.add(tree);
         
-        while (!X.isEmpty()){
-            VTreeNode node = X.pollFirst();
+        while (!treeList.isEmpty()){
+            VTreeNode node = treeList.pollFirst();
             if (node.getLeft() != null){
                 if (isNotComplete)
                     return false;
-                X.add(node.getLeft());
+                treeList.add(node.getLeft());
             }
             else
                 isNotComplete = true;
             if (node.getRight() != null){
                 if (isNotComplete)
                     return false;
-                X.add(node.getRight());
+                treeList.add(node.getRight());
             }
             else
                 isNotComplete = true;

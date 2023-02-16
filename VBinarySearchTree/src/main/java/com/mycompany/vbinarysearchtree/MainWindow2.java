@@ -10,7 +10,7 @@ package com.mycompany.vbinarysearchtree;
  */
 public class MainWindow2 extends javax.swing.JFrame {
         
-    private ViperBST tree;
+    final private ViperBST tree;
     /**
      * Creates new form BSTGrapgics
      */
@@ -28,263 +28,271 @@ public class MainWindow2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        tree_panel = new GraphicPanel();
-        TextField = new javax.swing.JTextField();
-        add_button = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        levels = new javax.swing.JLabel();
-        tree_label_string = new javax.swing.JLabel();
-        leaves = new javax.swing.JLabel();
-        tree_string = new javax.swing.JTextField();
-        nodes = new javax.swing.JLabel();
-        tree_preOrder = new javax.swing.JTextField();
-        full = new javax.swing.JLabel();
-        tree_label_preOrder = new javax.swing.JLabel();
-        complete = new javax.swing.JLabel();
-        tree_inOrder = new javax.swing.JTextField();
-        height_data = new javax.swing.JTextField();
-        tree_label_postOrder = new javax.swing.JLabel();
-        levels_data = new javax.swing.JTextField();
-        tree_postOrder = new javax.swing.JTextField();
-        leaves_data = new javax.swing.JTextField();
-        tree_label_inOrder = new javax.swing.JLabel();
-        nodes_data = new javax.swing.JTextField();
-        isFull = new javax.swing.JTextField();
-        height = new javax.swing.JLabel();
-        isComplete = new javax.swing.JTextField();
+        MainWindow2_Frame_tree_panel = new GraphicPanel();
+        MainWindow2_TextField_Add = new javax.swing.JTextField();
+        MainWindow2_button_add = new javax.swing.JButton();
+        MainWindow2_label_stats = new javax.swing.JLabel();
+        MainWindow2_label_levels = new javax.swing.JLabel();
+        MainWindow2_label_string = new javax.swing.JLabel();
+        MainWindow2_label_leaves = new javax.swing.JLabel();
+        MainWindow2_textFiled_string = new javax.swing.JTextField();
+        MainWindow2_label_nodes = new javax.swing.JLabel();
+        MainWindow2_textFiled_preOrder = new javax.swing.JTextField();
+        MainWindow2_label_full = new javax.swing.JLabel();
+        MainWindow2_label_preOrder = new javax.swing.JLabel();
+        MainWindow2_label_complete = new javax.swing.JLabel();
+        MainWindow2_textFiled_InOrder = new javax.swing.JTextField();
+        MainWindow2_textLabel_height = new javax.swing.JTextField();
+        MainWindow2_label_PostOrder = new javax.swing.JLabel();
+        MainWindow2_textField_levels = new javax.swing.JTextField();
+        MainWindow2_textField_PostOrder = new javax.swing.JTextField();
+        MainWindow2_textField_leaves = new javax.swing.JTextField();
+        MainWindow2_label_inOder = new javax.swing.JLabel();
+        MainWindow2_textField_Nodes = new javax.swing.JTextField();
+        MainWindow2_textField_isFull = new javax.swing.JTextField();
+        MainWindow2_label_height = new javax.swing.JLabel();
+        MainWindow2_textField_isComplete = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        tree_panel.setBackground(new java.awt.Color(255, 255, 255));
+        MainWindow2_Frame_tree_panel.setBackground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout tree_panelLayout = new javax.swing.GroupLayout(tree_panel);
-        tree_panel.setLayout(tree_panelLayout);
-        tree_panelLayout.setHorizontalGroup(
-            tree_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout MainWindow2_Frame_tree_panelLayout = new javax.swing.GroupLayout(MainWindow2_Frame_tree_panel);
+        MainWindow2_Frame_tree_panel.setLayout(MainWindow2_Frame_tree_panelLayout);
+        MainWindow2_Frame_tree_panelLayout.setHorizontalGroup(
+            MainWindow2_Frame_tree_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
-        tree_panelLayout.setVerticalGroup(
-            tree_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        MainWindow2_Frame_tree_panelLayout.setVerticalGroup(
+            MainWindow2_Frame_tree_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 394, Short.MAX_VALUE)
         );
 
-        TextField.setMinimumSize(new java.awt.Dimension(100, 23));
-        TextField.setPreferredSize(new java.awt.Dimension(100, 23));
+        MainWindow2_TextField_Add.setMinimumSize(new java.awt.Dimension(100, 23));
+        MainWindow2_TextField_Add.setPreferredSize(new java.awt.Dimension(100, 23));
 
-        add_button.setText("ADD");
-        add_button.addActionListener(new java.awt.event.ActionListener() {
+        MainWindow2_button_add.setText("ADD");
+        MainWindow2_button_add.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                add_buttonActionPerformed(evt);
+                MainWindow2_button_addActionPerformed(evt);
             }
         });
 
-        jLabel1.setText("STATS");
+        MainWindow2_label_stats.setText("STATS");
 
-        levels.setText("Levels");
+        MainWindow2_label_levels.setText("Levels");
 
-        tree_label_string.setText("String");
+        MainWindow2_label_string.setText("String");
 
-        leaves.setText("Leaves");
+        MainWindow2_label_leaves.setText("Leaves");
 
-        tree_string.setEditable(false);
-        tree_string.setBackground(new java.awt.Color(255, 255, 255));
+        MainWindow2_textFiled_string.setEditable(false);
+        MainWindow2_textFiled_string.setBackground(new java.awt.Color(255, 255, 255));
 
-        nodes.setText("Nodes");
+        MainWindow2_label_nodes.setText("Nodes");
 
-        tree_preOrder.setEditable(false);
-        tree_preOrder.setBackground(new java.awt.Color(255, 255, 255));
+        MainWindow2_textFiled_preOrder.setEditable(false);
+        MainWindow2_textFiled_preOrder.setBackground(new java.awt.Color(255, 255, 255));
 
-        full.setText("Full?");
+        MainWindow2_label_full.setText("Full?");
 
-        tree_label_preOrder.setText("Pre Order");
+        MainWindow2_label_preOrder.setText("Pre Order");
 
-        complete.setText("Complete?");
+        MainWindow2_label_complete.setText("Complete?");
 
-        tree_inOrder.setEditable(false);
-        tree_inOrder.setBackground(new java.awt.Color(255, 255, 255));
+        MainWindow2_textFiled_InOrder.setEditable(false);
+        MainWindow2_textFiled_InOrder.setBackground(new java.awt.Color(255, 255, 255));
 
-        height_data.setEditable(false);
-        height_data.setBackground(new java.awt.Color(255, 255, 255));
-        height_data.setText("     ");
+        MainWindow2_textLabel_height.setEditable(false);
+        MainWindow2_textLabel_height.setBackground(new java.awt.Color(255, 255, 255));
+        MainWindow2_textLabel_height.setText("     ");
 
-        tree_label_postOrder.setText("Post Order");
+        MainWindow2_label_PostOrder.setText("Post Order");
 
-        levels_data.setEditable(false);
-        levels_data.setBackground(new java.awt.Color(255, 255, 255));
-        levels_data.setText("     ");
+        MainWindow2_textField_levels.setEditable(false);
+        MainWindow2_textField_levels.setBackground(new java.awt.Color(255, 255, 255));
+        MainWindow2_textField_levels.setText("     ");
 
-        tree_postOrder.setEditable(false);
-        tree_postOrder.setBackground(new java.awt.Color(255, 255, 255));
+        MainWindow2_textField_PostOrder.setEditable(false);
+        MainWindow2_textField_PostOrder.setBackground(new java.awt.Color(255, 255, 255));
 
-        leaves_data.setEditable(false);
-        leaves_data.setBackground(new java.awt.Color(255, 255, 255));
-        leaves_data.setText("     ");
+        MainWindow2_textField_leaves.setEditable(false);
+        MainWindow2_textField_leaves.setBackground(new java.awt.Color(255, 255, 255));
+        MainWindow2_textField_leaves.setText("     ");
 
-        tree_label_inOrder.setText("In Order");
+        MainWindow2_label_inOder.setText("In Order");
 
-        nodes_data.setEditable(false);
-        nodes_data.setBackground(new java.awt.Color(255, 255, 255));
-        nodes_data.setText("     ");
+        MainWindow2_textField_Nodes.setEditable(false);
+        MainWindow2_textField_Nodes.setBackground(new java.awt.Color(255, 255, 255));
+        MainWindow2_textField_Nodes.setText("     ");
 
-        isFull.setEditable(false);
-        isFull.setBackground(new java.awt.Color(255, 255, 255));
-        isFull.setText("          ");
+        MainWindow2_textField_isFull.setEditable(false);
+        MainWindow2_textField_isFull.setBackground(new java.awt.Color(255, 255, 255));
+        MainWindow2_textField_isFull.setText("          ");
 
-        height.setText("Height");
+        MainWindow2_label_height.setText("Height");
 
-        isComplete.setEditable(false);
-        isComplete.setBackground(new java.awt.Color(255, 255, 255));
-        isComplete.setText("          ");
+        MainWindow2_textField_isComplete.setEditable(false);
+        MainWindow2_textField_isComplete.setBackground(new java.awt.Color(255, 255, 255));
+        MainWindow2_textField_isComplete.setText("          ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(TextField, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(add_button)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(60, 60, 60)
+                                .addComponent(MainWindow2_label_stats))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(24, 24, 24)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(MainWindow2_label_complete)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(MainWindow2_textField_isComplete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(MainWindow2_label_nodes)
+                                        .addGap(40, 40, 40)
+                                        .addComponent(MainWindow2_textField_Nodes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(MainWindow2_label_leaves)
+                                            .addComponent(MainWindow2_label_full)
+                                            .addComponent(MainWindow2_label_height)
+                                            .addComponent(MainWindow2_label_levels))
+                                        .addGap(40, 40, 40)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(MainWindow2_textField_levels, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(MainWindow2_textField_leaves, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(MainWindow2_textField_isFull, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(MainWindow2_textLabel_height, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(15, 15, 15)
+                                .addComponent(MainWindow2_textFiled_string, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(91, 91, 91)
+                                .addComponent(MainWindow2_label_string)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(38, 38, 38)
+                                .addComponent(MainWindow2_textFiled_InOrder, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(43, 43, 43)
+                                .addComponent(MainWindow2_textFiled_preOrder, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                                .addComponent(MainWindow2_textField_PostOrder, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(109, 109, 109)
+                                .addComponent(MainWindow2_label_inOder)
+                                .addGap(189, 189, 189)
+                                .addComponent(MainWindow2_label_preOrder)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(MainWindow2_label_PostOrder)
+                                .addGap(66, 66, 66))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(MainWindow2_Frame_tree_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(MainWindow2_TextField_Add, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(MainWindow2_button_add)))
                 .addGap(25, 25, 25))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(levels)
-                            .addComponent(leaves)
-                            .addComponent(full)
-                            .addComponent(complete)
-                            .addComponent(height)
-                            .addComponent(nodes))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(levels_data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(leaves_data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(isFull, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(isComplete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(height_data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(nodes_data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(tree_string, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(tree_label_string)
-                                .addGap(68, 68, 68)))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(tree_inOrder, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(tree_label_inOrder)
-                                .addGap(68, 68, 68)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(tree_preOrder, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(tree_label_preOrder)
-                                .addGap(59, 59, 59)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(tree_postOrder, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(3, 3, 3))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(tree_label_postOrder)
-                                .addGap(48, 48, 48))))
-                    .addComponent(tree_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(add_button))
+                    .addComponent(MainWindow2_TextField_Add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MainWindow2_button_add))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(24, 24, 24)
-                        .addComponent(jLabel1)
-                        .addGap(29, 29, 29)
+                        .addComponent(MainWindow2_label_stats)
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(height)
-                            .addComponent(height_data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(levels_data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(levels))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(MainWindow2_label_height)
+                            .addComponent(MainWindow2_textLabel_height, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(leaves)
-                            .addComponent(leaves_data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(MainWindow2_label_levels)
+                            .addComponent(MainWindow2_textField_levels, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(21, 21, 21)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(nodes_data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(nodes))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(MainWindow2_label_leaves)
+                            .addComponent(MainWindow2_textField_leaves, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(isFull, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(full))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(MainWindow2_textField_Nodes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(MainWindow2_label_nodes))
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(isComplete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(complete))
+                            .addComponent(MainWindow2_textField_isFull, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(MainWindow2_label_full))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(MainWindow2_textField_isComplete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(MainWindow2_label_complete))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(tree_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(MainWindow2_Frame_tree_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(tree_label_preOrder)
-                                .addComponent(tree_label_postOrder)
-                                .addComponent(tree_label_inOrder)
-                                .addComponent(tree_label_string))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(22, 22, 22)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(tree_string, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(tree_inOrder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(tree_preOrder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(tree_postOrder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 30, Short.MAX_VALUE))))
+                                    .addComponent(MainWindow2_label_string)
+                                    .addComponent(MainWindow2_label_inOder))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(MainWindow2_textFiled_string, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(MainWindow2_textFiled_InOrder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(MainWindow2_label_preOrder)
+                                    .addComponent(MainWindow2_label_PostOrder))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(MainWindow2_textFiled_preOrder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(MainWindow2_textField_PostOrder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 18, Short.MAX_VALUE))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void add_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add_buttonActionPerformed
+    private void MainWindow2_button_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainWindow2_button_addActionPerformed
         //graphic update
-        tree.add(Integer.valueOf(TextField.getText()));
-        ((GraphicPanel) tree_panel).processData(tree);
+        tree.add(Integer.valueOf(MainWindow2_TextField_Add.getText()));
+        ((GraphicPanel) MainWindow2_Frame_tree_panel).processData(tree);
         
         updateStats();
         clean();
-    }//GEN-LAST:event_add_buttonActionPerformed
+    }//GEN-LAST:event_MainWindow2_button_addActionPerformed
 
     private void clean() {
-        TextField.setText("");
+        MainWindow2_TextField_Add.setText("");
     }
     
     private void updateStats() {
-        height_data.setText(tree.getHeight() + "");
-        levels_data.setText(tree.getNumLevels() + "");
-        leaves_data.setText(tree.getNumLeaves() + "");
-        nodes_data.setText(tree.getNumNodes() + "");
-        isFull.setText(tree.isFull() + "");
-        isComplete.setText(tree.isComplete() + "");
-        tree_string.setText(tree.toString());
-        tree_inOrder.setText(tree.inOrder());
-        tree_preOrder.setText(tree.preOrder());
-        tree_postOrder.setText(tree.postOrder());
+        //stats
+        MainWindow2_textLabel_height.setText(tree.getHeight() + "");
+        MainWindow2_textField_levels.setText(tree.getNumLevels() + "");
+        MainWindow2_textField_leaves.setText(tree.getNumLeaves() + "");
+        MainWindow2_textField_Nodes.setText(tree.getNumNodes() + "");
+        MainWindow2_textField_isFull.setText(tree.isFull() + "");
+        MainWindow2_textField_isComplete.setText(tree.isComplete() + "");
+        
+        //strings
+        MainWindow2_textFiled_string.setText(tree.toString());
+        MainWindow2_textFiled_InOrder.setText(tree.inOrder());
+        MainWindow2_textFiled_preOrder.setText(tree.preOrder());
+        MainWindow2_textField_PostOrder.setText(tree.postOrder());
     }
     
     /**
@@ -324,29 +332,29 @@ public class MainWindow2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField TextField;
-    private javax.swing.JButton add_button;
-    private javax.swing.JLabel complete;
-    private javax.swing.JLabel full;
-    private javax.swing.JLabel height;
-    private javax.swing.JTextField height_data;
-    private javax.swing.JTextField isComplete;
-    private javax.swing.JTextField isFull;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel leaves;
-    private javax.swing.JTextField leaves_data;
-    private javax.swing.JLabel levels;
-    private javax.swing.JTextField levels_data;
-    private javax.swing.JLabel nodes;
-    private javax.swing.JTextField nodes_data;
-    private javax.swing.JTextField tree_inOrder;
-    private javax.swing.JLabel tree_label_inOrder;
-    private javax.swing.JLabel tree_label_postOrder;
-    private javax.swing.JLabel tree_label_preOrder;
-    private javax.swing.JLabel tree_label_string;
-    private javax.swing.JPanel tree_panel;
-    private javax.swing.JTextField tree_postOrder;
-    private javax.swing.JTextField tree_preOrder;
-    private javax.swing.JTextField tree_string;
+    private javax.swing.JPanel MainWindow2_Frame_tree_panel;
+    private javax.swing.JTextField MainWindow2_TextField_Add;
+    private javax.swing.JButton MainWindow2_button_add;
+    private javax.swing.JLabel MainWindow2_label_PostOrder;
+    private javax.swing.JLabel MainWindow2_label_complete;
+    private javax.swing.JLabel MainWindow2_label_full;
+    private javax.swing.JLabel MainWindow2_label_height;
+    private javax.swing.JLabel MainWindow2_label_inOder;
+    private javax.swing.JLabel MainWindow2_label_leaves;
+    private javax.swing.JLabel MainWindow2_label_levels;
+    private javax.swing.JLabel MainWindow2_label_nodes;
+    private javax.swing.JLabel MainWindow2_label_preOrder;
+    private javax.swing.JLabel MainWindow2_label_stats;
+    private javax.swing.JLabel MainWindow2_label_string;
+    private javax.swing.JTextField MainWindow2_textField_Nodes;
+    private javax.swing.JTextField MainWindow2_textField_PostOrder;
+    private javax.swing.JTextField MainWindow2_textField_isComplete;
+    private javax.swing.JTextField MainWindow2_textField_isFull;
+    private javax.swing.JTextField MainWindow2_textField_leaves;
+    private javax.swing.JTextField MainWindow2_textField_levels;
+    private javax.swing.JTextField MainWindow2_textFiled_InOrder;
+    private javax.swing.JTextField MainWindow2_textFiled_preOrder;
+    private javax.swing.JTextField MainWindow2_textFiled_string;
+    private javax.swing.JTextField MainWindow2_textLabel_height;
     // End of variables declaration//GEN-END:variables
 }
